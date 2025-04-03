@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronomy Info</title>
-    <style type="text/css" src=" style.css"></style>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
 </head>
@@ -45,18 +45,25 @@
         <p>Explore the wonders of the universe</p>
     </header>
     <div class="cards-container">
-        <div class="card">
-            <h2>Astronomy Picture of the Day</h2>
-            <p>Discover a new breathtaking image of the cosmos every day.</p>
+        <div class="card" id="apod">
+            <div class="card-image" id="res-apod"> </div>
+            <a href="apod.html" class="card-link">
+                <h2>APOD</h2>
+                <p>Discover the Astronomy Picture of any day</p>
+            </a>   
         </div>
-        <div class="card">
+        
+        <div class="card" id="mars">
             <h2>Mars Rover Photos</h2>
             <p>View stunning images captured by NASA's Mars rovers.</p>
+            <div class="card-image" id="res-mars"> </div>
         </div>
-        <div class="card">
+        <div class="card" id="exoplanets">
             <h2>Exoplanet Archive</h2>
             <p>Explore data on planets beyond our solar system.</p>
+            <div class="card-image" id="res-exoplanets"> </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html></div>
