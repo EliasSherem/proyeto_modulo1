@@ -1,0 +1,33 @@
+.card-container {
+    display: flex;
+    justify-content: center; /* Centers the card horizontally */
+    align-items: center; /* Centers the card vertically if needed */
+    margin-top: 20px; /* Adjust spacing */
+    width: 100%;
+}
+
+.card {
+    background-color: #415a77;
+    border-radius: 12px;
+    padding: 20px;
+    width: 720px; /* Increase card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%; /* Makes sure the image fits */
+    border-radius: 10px;
+    height: auto;
+}
+
+
+
+.card h2 {
+    font-size: 24px; /* Bigger title */
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}

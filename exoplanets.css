@@ -1,0 +1,45 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+    height: 500px;  /* Ensures all cards are the same height */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image fills the space properly */
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card .text-container {
+    flex-grow: 1;  /* Fills available space */
+    overflow-y: auto; /* Enables scrolling for long text */
+    max-height: 200px; /* Restricts text height */
+    padding: 5px;
+    text-align: left; /* Better readability */
+    width: 100%;
+}
